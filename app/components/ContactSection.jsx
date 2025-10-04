@@ -77,7 +77,7 @@ const ContactSection = () => {
                 hover:from-white hover:to-white transition">
                   <FontAwesomeIcon
                     icon={contact.icon}
-                    className="text-4xl lg:text-7xl text-white hover:text-first"
+                    className="text-4xl lg:text-7xl text-white hover:text-second"
                   />
                 </div>
                 <span className="mt-2 text-sm text-second text-center">

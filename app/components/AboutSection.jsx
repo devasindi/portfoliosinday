@@ -20,7 +20,7 @@ const TAB_DATA = [
     id: "skills",
     title: "Skills",
     content: (
-      <ul className="flex flex-wrap justify-center md:justify-start gap-5 w-full text-white">
+      <ul className="flex flex-wrap justify-center md:justify-start gap-5 w-full text-first">
         <li className="flex flex-col justify-center items-center gap-1">
           <FontAwesomeIcon icon={faHtml5} className="text-5xl" />
           <span className="text-sm">HTML</span>
@@ -89,7 +89,7 @@ const TAB_DATA = [
     content: (
       <div className="flex flex-col md:flex-row gap-3 items-center">
         <Image src={"/images/unnes.png"} width={50} height={50} />
-        <p className="text-white text-center md:text-left">
+        <p className="text-second text-center md:text-left">
           Bachelor's of Computer Science at Universitas Negeri Semarang
         </p>
       </div>
@@ -107,7 +107,7 @@ const TAB_DATA = [
             width={50}
             height={50}
           />
-          <p className="text-white text-center md:text-left">
+          <p className="text-second text-center md:text-left">
             Information Technology Intern - PT.Steradian Data Optima (Feb - Jul
             2024)
           </p>
@@ -119,7 +119,7 @@ const TAB_DATA = [
             width={50}
             height={50}
           />
-          <p className="text-white text-center md:text-left">
+          <p className="text-second text-center md:text-left">
             Student - Study Independent Kampus Merdeka at Hacktiv8 (Sep - Des
             2024)
           </p>
@@ -132,10 +132,10 @@ const TAB_DATA = [
             height={50}
           />
           <div className="flex flex-col justify-start gap-2">
-            <p className="text-white text-center md:text-left">
+            <p className="text-second text-center md:text-left">
               Vice Chairman - Hima Ilmu Komputer UNNES (Jan - Des 2023)
             </p>
-            <p className="text-white text-center md:text-left">
+            <p className="text-second text-center md:text-left">
               Expert Staff Internal Division - Hima Ilmu Komputer UNNES (Jan -
               Des 2022)
             </p>
@@ -159,7 +159,7 @@ const AboutSection = () => {
   return (
     <motion.section
       id="about"
-      className="text-white scroll-mt-20"
+      className="text-second scroll-mt-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -168,15 +168,20 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           alt={"img"}
-          id="about me"
-          src={"/images/about.jpg"}
+          id="about-me"
+          src={"/images/sindi1.JPG"}
           height={500}
           width={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl text-white font-bold mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-justify">
-            A frontend Developer with one year of experience specializing in building responsive and user-focused web interfaces using ReactJS and Tailwind CSS. Gained hands-on experience through freelance projects, academic research, and internships. Skilled in UI design adaptation, component-based development, and effective collaboration within cross-functional teams.
+          <h2 className="text-4xl text-second font-bold mb-4">About Me</h2>
+          <p className="text-base text-first lg:text-lg text-justify">
+            A frontend Developer with one year of experience specializing in
+            building responsive and user-focused web interfaces using ReactJS
+            and Tailwind CSS. Gained hands-on experience through freelance
+            projects, academic research, and internships. Skilled in UI design
+            adaptation, component-based development, and effective collaboration
+            within cross-functional teams.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

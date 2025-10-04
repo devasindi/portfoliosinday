@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -36,7 +36,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <motion.section 
+    <motion.section
       id="contact"
       className="scroll-mt-20"
       initial={{ opacity: 0, y: 50 }}
@@ -44,9 +44,9 @@ const ContactSection = () => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="text-white flex flex-col justify-center md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="text-second flex flex-col justify-center md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         {/* photo */}
-        <div className="rounded-full bg-[#1E1E2F] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="rounded-full bg-second w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image
             src={"/images/contact.png"}
             alt="profile"
@@ -58,9 +58,9 @@ const ContactSection = () => {
 
         {/* contact */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl text-white font-bold mb-4">Contact Me!</h2>
+          <h2 className="text-4xl text-second font-bold mb-4">Contact Me!</h2>
           <p className="text-base lg:text-lg ">
-            Interested in working together or collaborating on a project? <br/>
+            Interested in working together or collaborating on a project? <br />
             Let’s connect! I'm always open to new opportunities and discussions
           </p>
           <div className="flex flex-wrap justify-start gap-4 mt-4 md:gap-8">
@@ -72,13 +72,15 @@ const ContactSection = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center w-12 md:w-20"
               >
-                <div className="size-8 md:w-14 md:h-14 flex items-center justify-center bg-gradient-to-r from-secondary-500 to-primary-500 rounded-xl transition">
+                <div className="size-8 md:w-14 md:h-14 flex items-center justify-center 
+                bg-gradient-to-r from-secondary to-primary 
+                hover:from-white hover:to-white transition">
                   <FontAwesomeIcon
                     icon={contact.icon}
-                    className="text-4xl lg:text-7xl text-white md:text-gray-600 md:hover:text-white"
+                    className="text-4xl lg:text-7xl text-white hover:text-first"
                   />
                 </div>
-                <span className="mt-2 text-sm text-white text-center">
+                <span className="mt-2 text-sm text-second text-center">
                   {contact.label}
                 </span>
               </Link>

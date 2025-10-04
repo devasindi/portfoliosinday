@@ -12,16 +12,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio - Sindi",
-  description: "Portfolio Sugini Injani as Frontend Developer",
+  title: "Portfolio - DSM",
+  description: "Portfolio Deva Sindi Maulita as QA Engineer",
+  icons: {
+    icon: "/app/favicon.ico", 
+    shortcut: "/app/favicon.ico",
+    apple: "/images/apple-touch-icon.png", 
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/images/icon-g.png" type="image/png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

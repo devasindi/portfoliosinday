@@ -21,12 +21,12 @@ const ContactSection = () => {
     {
       icon: faLinkedin,
       label: "Linkedin",
-      path: "https://www.linkedin.com/in/suginiinjani/",
+      path: "https://www.linkedin.com/in/devasindimaulita/",
     },
     {
       icon: faSquareInstagram,
       label: "Instagram",
-      path: "https://www.instagram.com/s.injzhani",
+      path: "https://www.instagram.com/desinmaaa",
     },
     {
       icon: faSquareEnvelope,

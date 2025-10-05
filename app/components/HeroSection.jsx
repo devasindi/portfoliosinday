@@ -28,7 +28,7 @@ function HeroSection() {
                 1700,
                 "PM Enthusiast",
                 1700,
-                "System Analyst Enthusiast",
+                "SA Enthusiast",
                 1700,
               ]}
               wrapper="span"
@@ -37,13 +37,12 @@ function HeroSection() {
             />
           </h1>
           <p className="text-first text-base italic sm:text-lg lg:text-xl mb-6">
-            I build clean and user-friendly frontend experiences crafted with
-            code and custom-designed interfaces.
+            Bridging quality, analysis, and leadership to build reliable and efficient software.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary text-white font-semibold mr-4 hover:text-secondary">
               <a
-                href="http://www.linkedin.com/in/suginiinjani/"
+                href="http://www.linkedin.com/in/devasindimaulita/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -71,9 +70,9 @@ function HeroSection() {
         >
           <div className="rounded-full bg-second w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src={"/images/profile.png"}
+              src={"/images/hero-sindi.png"}
               alt="profile"
-              className="absolute transform -translate-x-1/2 -translate-y-[41%] top-1/2 left-1/2 rounded-b-full"
+              className="absolute transform -translate-x-1/2 -translate-y-[50.3%] top-1/2 left-1/2 rounded-b-full"
               width={400}
               height={400}
             />

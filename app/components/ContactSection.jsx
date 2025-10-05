@@ -16,7 +16,7 @@ const ContactSection = () => {
     {
       icon: faSquareGithub,
       label: "Github",
-      path: "https://github.com/injanisgg",
+      path: "https://github.com/devasindi",
     },
     {
       icon: faLinkedin,
@@ -31,7 +31,7 @@ const ContactSection = () => {
     {
       icon: faSquareEnvelope,
       label: "Email",
-      path: "mailto:suginiinzani@gmail.com",
+      path: "mailto:devsinwork@gmail.com",
     },
   ];
 
@@ -44,24 +44,24 @@ const ContactSection = () => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="text-second flex flex-col justify-center md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="text-second flex flex-col justify-center items-center md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         {/* photo */}
         <div className="rounded-full bg-second w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image
-            src={"/images/contact.png"}
+            src={"/images/contact-sindi.png"}
             alt="profile"
-            className="absolute transform -translate-x-1/2 -translate-y-[42%] top-1/2 left-1/2 rounded-b-full"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-[52.74%] left-1/2 rounded-b-full"
             width={400}
             height={400}
           />
         </div>
 
         {/* contact */}
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 md:py-12 text-left flex flex-col h-full">
           <h2 className="text-4xl text-second font-bold mb-4">Contact Me!</h2>
           <p className="text-base lg:text-lg ">
-            Interested in working together or collaborating on a project? <br />
-            Let’s connect! I'm always open to new opportunities and discussions
+            Open to collaboration, learning, and new opportunities. <br />
+            Let’s connect and create something impactful together!
           </p>
           <div className="flex flex-wrap justify-start gap-4 mt-4 md:gap-8">
             {contactData.map((contact, index) => (

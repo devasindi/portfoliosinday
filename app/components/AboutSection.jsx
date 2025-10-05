@@ -4,15 +4,18 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import { motion } from "framer-motion";
 import {
-  faHtml5,
-  faCss3Alt,
   faJs,
-  faReact,
-  faBootstrap,
   faFigma,
-  faPython,
-  faKaggle,
+  faTrello,
+  faJira,
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faSquareCheck,
+  faRotate,
+  faFileLines,
+  faBug,
+} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TAB_DATA = [
@@ -22,63 +25,60 @@ const TAB_DATA = [
     content: (
       <ul className="flex flex-wrap justify-center md:justify-start gap-5 w-full text-first">
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faHtml5} className="text-5xl" />
-          <span className="text-sm">HTML</span>
+          <FontAwesomeIcon icon={faTrello} className="text-5xl" />
+          <span className="text-sm">Trello</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faCss3Alt} className="text-5xl" />
-          <span className="text-sm">CSS</span>
+          <FontAwesomeIcon icon={faJira} className="text-5xl" />
+          <span className="text-sm">Jira</span>
+        </li>
+        <li className="flex flex-col justify-center items-center gap-1">
+          <FontAwesomeIcon icon={faGoogle} className="text-5xl" />
+          <span className="text-sm">Workspace</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
           <FontAwesomeIcon icon={faFigma} className="text-5xl" />
           <span className="text-sm">Figma</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faKaggle} className="text-5xl" />
-          <span className="text-sm">Kaggle</span>
+          <Image alt="logo" src={"/images/canva-144.png"} width={50} height={50} />
+          <span className="text-sm">Canva</span>
+        </li>
+        <li className="flex flex-col justify-center items-center gap-1">
+          <Image alt="logo" src={"/images/appium.png"} width={50} height={50} />
+          <span className="text-sm">Appium</span>
+        </li>
+        <li className="flex flex-col justify-center items-center gap-1">
+          <Image alt="logo" src={"/images/google-colab-144.png"} width={50} height={50} />
+          <span className="text-sm">Colab</span>
+        </li>
+        <li className="flex flex-col justify-center items-center gap-1">
+          <Image alt="logo" src={"/images/intellij-idea-144.png"} width={50} height={50} />
+          <span className="text-sm">Intellij Idea</span>
+        </li>
+        <li className="flex flex-col justify-center items-center gap-1">
+          <Image alt="logo" src={"/images/vs-code-144.png"} width={50} height={50} />
+          <span className="text-sm">VS Code</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
           <FontAwesomeIcon icon={faJs} className="text-5xl" />
           <span className="text-xs">Javascript</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faReact} className="text-5xl" />
-          <span className="text-sm">ReactJS</span>
+          <FontAwesomeIcon icon={faSquareCheck} className="text-5xl" />
+          <span className="text-xs">Manual Testing</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faBootstrap} className="text-5xl" />
-          <span className="text-sm">Bootstrap</span>
+          <FontAwesomeIcon icon={faRotate} className="text-5xl" />
+          <span className="text-xs text-center">Functional<br/>& Regression Testing</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <FontAwesomeIcon icon={faPython} className="text-5xl" />
-          <span className="text-sm">Python</span>
+          <FontAwesomeIcon icon={faFileLines} className="text-5xl" />
+          <span className="text-xs text-center">Test Case <br/>& Plan Design</span>
         </li>
         <li className="flex flex-col justify-center items-center gap-1">
-          <Image
-            alt={"img"}
-            src={"/images/tailwind-120.png"}
-            width={50}
-            height={50}
-          />
-          <span className="text-sm">Tailwind</span>
-        </li>
-        <li className="flex flex-col justify-center items-center gap-1">
-          <Image
-            alt={"img"}
-            src={"/images/vite-120.png"}
-            width={50}
-            height={50}
-          />
-          <span className="text-sm">Vite</span>
-        </li>
-        <li className="flex flex-col justify-center items-center gap-1">
-          <Image
-            alt={"img"}
-            src={"/images/nextjs-120.png"}
-            width={50}
-            height={50}
-          />
-          <span className="text-sm">NextJS</span>
+          <FontAwesomeIcon icon={faBug} className="text-5xl" />
+          <span className="text-xs text-center">Bug Tracking<br/>& Reporting</span>
         </li>
       </ul>
     ),
@@ -88,7 +88,7 @@ const TAB_DATA = [
     title: "Education",
     content: (
       <div className="flex flex-col md:flex-row gap-3 items-center">
-        <Image src={"/images/unnes.png"} width={50} height={50} />
+        <Image alt="unnes logo" src={"/images/unnes.png"} width={50} height={50} />
         <p className="text-second text-center md:text-left">
           Bachelor's of Computer Science at Universitas Negeri Semarang
         </p>
@@ -103,24 +103,26 @@ const TAB_DATA = [
         <li className="flex flex-col md:flex-row gap-3 items-center">
           <Image
             alt={"img"}
-            src={"/images/steradian.png"}
+            src={"/images/maybank.png"}
             width={50}
             height={50}
+            className="rounded-xl"
           />
           <p className="text-second text-center md:text-left">
-            Information Technology Intern - PT.Steradian Data Optima (Feb - Jul
+            QA Engineer, Information Technology Intern - Maybank Sekuritas Indonesia (Feb - Jul
             2024)
           </p>
         </li>
         <li className="flex flex-col md:flex-row gap-3 items-center">
           <Image
             alt={"img"}
-            src={"/images/hacktiv8.png"}
+            src={"/images/bangkit.jpg"}
             width={50}
             height={50}
+            className="rounded-xl"
           />
           <p className="text-second text-center md:text-left">
-            Student - Study Independent Kampus Merdeka at Hacktiv8 (Sep - Des
+            Cloud Computing Student - Study Independent Kampus Merdeka at Bangkit Academy (Sep - Des
             2024)
           </p>
         </li>
@@ -133,10 +135,20 @@ const TAB_DATA = [
           />
           <div className="flex flex-col justify-start gap-2">
             <p className="text-second text-center md:text-left">
-              Vice Chairman - Hima Ilmu Komputer UNNES (Jan - Des 2023)
+              Head of Community Social Division - Hima Ilmu Komputer FMIPA UNNES (Jan - Des 2023)
             </p>
+          </div>
+        </li>
+        <li className="flex flex-col md:flex-row gap-3 items-center">
+          <Image
+            alt={"img"}
+            src={"/images/hima-ilkom.png"}
+            width={50}
+            height={50}
+          />
+          <div className="flex flex-col justify-start gap-2">
             <p className="text-second text-center md:text-left">
-              Expert Staff Internal Division - Hima Ilmu Komputer UNNES (Jan -
+              Expert Staff Community Social Division - Hima Ilmu Komputer FMIPA UNNES (Jan -
               Des 2022)
             </p>
           </div>
@@ -165,7 +177,7 @@ const AboutSection = () => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           alt={"img"}
           id="about-me"
@@ -176,12 +188,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl text-second font-bold mb-4">About Me</h2>
           <p className="text-base text-first lg:text-lg text-justify">
-            A frontend Developer with one year of experience specializing in
-            building responsive and user-focused web interfaces using ReactJS
-            and Tailwind CSS. Gained hands-on experience through freelance
-            projects, academic research, and internships. Skilled in UI design
-            adaptation, component-based development, and effective collaboration
-            within cross-functional teams.
+            Information Systems graduate with internship experience in quality assurance and technical support. Skilled in manual and 
+            automation testing, bug reporting, regression testing, and test documentation using JIRA, Trello, and Appium. Experienced in 
+            organizational leadership, academic collaboration, and content development. Aspiring to grow as a Quality Assurance Engineer by 
+            leveraging analytical, problem-solving, and teamwork skills to ensure software quality and reliability. 
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

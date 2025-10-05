@@ -66,7 +66,7 @@ const AchievementsSection = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-3 md:flex-row md:gap-5 justify-center items-center">
-          <div className="relative w-56 h-56 lg:w-80 lg:h-80 xl:w-[30rem] xl:h-[30rem]">
+          <div className="relative w-56 h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
             <Image
               alt={"img"}
               id="about-me"
@@ -75,7 +75,7 @@ const AchievementsSection = () => {
               className="object-contain"
             />
           </div>
-          <div className="relative w-56 h-56 lg:w-80 lg:h-80 xl:w-[30rem] xl:h-[30rem]">
+          <div className="relative w-56 h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
             <Image
               alt={"img"}
               id="about-me"
@@ -84,7 +84,7 @@ const AchievementsSection = () => {
               className="object-contain"
             />
           </div>
-          <div className="relative w-56 h-56 lg:w-80 lg:h-80 xl:w-[30rem] xl:h-[30rem]">
+          <div className="relative w-56 h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
             <Image
               alt={"img"}
               id="about-me"

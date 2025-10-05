@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "TITAN Trade ID",
     description:
-      "A machine learning model that detects risk of depression based on user input. This project will predict and classify the depression risk, whether the risk is high or low for having depression.",
+      "Conduct manual testing for the Trade ID application, a stock trading platform where users can buy and sell shares, manage their portfolios, and monitor market prices in real time.",
     image: "/images/projects/titan.png",
     tag: ["All", "QA"],
     gitUrl: "",
@@ -19,7 +19,7 @@ const projectsData = [
     id: 2,
     title: "Game: Simulasi Wirausaha",
     description:
-      "A information system for stationery store named HK Jaya, offering a wide range of office and school supplies with user-friendly navigation, product catalog, and smooth responsive website.",
+      "Conduct manual testing for a simulation game where the player manages a character who collects coins, buys items from stores, and sells them to NPCs.",
     image: "/images/projects/game.png",
     tag: ["All", "QA"],
     gitUrl: "",
@@ -29,7 +29,7 @@ const projectsData = [
     id: 3,
     title: "Meeting Room Booking System Project",
     description:
-      "A machine learning model that classify water quality index whether the quality is safe or unsafe based on user input of enviromental parameters. This project created for college final project (thesis).",
+      "Conduct manual testing for a meeting room booking system to verify room reservations based on location, number of participants, and meeting schedule.",
     image: "/images/projects/meeting.png",
     tag: ["All", "QA"],
     gitUrl: "",

@@ -52,7 +52,7 @@ function HeroSection() {
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary hover:bg-slate-800 text-second mt-3">
               <span className="block bg-main hover:bg-white rounded-full px-5 py-2">
                 <a
-                  href="https://drive.google.com/file/d/1TBQqPbUk6guHnqTizEkdeFk_EoA4_lKf/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bIaqWFwV4Pw2lPqSynRjcBo8G7Buxs-7/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

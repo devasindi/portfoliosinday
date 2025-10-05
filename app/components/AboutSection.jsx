@@ -127,6 +127,16 @@ const TAB_DATA = [
           </p>
         </li>
         <li className="flex flex-col md:flex-row gap-3 items-center">
+          <Image 
+            alt="unnes logo" 
+            src={"/images/unnes.png"} 
+            width={50} 
+            height={50} />
+          <p className="text-second text-center md:text-left">
+            Laboratorium Assistant - Department Computer Science FMIPA UNNES (2024)
+          </p>
+        </li>
+        <li className="flex flex-col md:flex-row gap-3 items-center">
           <Image
             alt={"img"}
             src={"/images/hima-ilkom.png"}

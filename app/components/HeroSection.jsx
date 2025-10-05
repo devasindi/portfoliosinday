@@ -40,7 +40,7 @@ function HeroSection() {
             Bridging quality, analysis, and leadership to build reliable and efficient software.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary text-white font-semibold mr-4 hover:text-secondary">
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary text-white hover:font-semibold mr-4">
               <a
                 href="http://www.linkedin.com/in/devasindimaulita/"
                 target="_blank"

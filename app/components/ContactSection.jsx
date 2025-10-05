@@ -50,20 +50,20 @@ const ContactSection = () => {
           <Image
             src={"/images/contact-sindi.png"}
             alt="profile"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-[52.74%] left-1/2 rounded-b-full"
-            width={400}
-            height={400}
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-[44.5%] left-1/2 rounded-b-full"
+            width={450}
+            height={450}
           />
         </div>
 
         {/* contact */}
-        <div className="mt-4 md:mt-0 md:py-12 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 md:py-12 text-center md:text-left flex flex-col h-full">
           <h2 className="text-4xl text-second font-bold mb-4">Contact Me!</h2>
           <p className="text-base lg:text-lg ">
             Open to collaboration, learning, and new opportunities. <br />
             Let’s connect and create something impactful together!
           </p>
-          <div className="flex flex-wrap justify-start gap-4 mt-4 md:gap-8">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4 lg:gap-8">
             {contactData.map((contact, index) => (
               <Link
                 key={index}
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center w-12 md:w-20"
               >
-                <div className="size-8 md:w-14 md:h-14 flex items-center justify-center 
+                <div className="size-7 lg:w-14 lg:h-14 flex items-center justify-center 
                 bg-gradient-to-r from-secondary to-primary 
                 hover:from-white hover:to-white transition">
                   <FontAwesomeIcon

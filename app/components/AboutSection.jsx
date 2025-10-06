@@ -123,7 +123,7 @@ const TAB_DATA = [
           />
           <p className="text-second text-center md:text-left">
             Cloud Computing Student - Study Independent Kampus Merdeka at Bangkit Academy (Sep - Des
-            2024)
+            2023)
           </p>
         </li>
         <li className="flex flex-col md:flex-row gap-3 items-center">

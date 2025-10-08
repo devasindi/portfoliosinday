@@ -123,7 +123,7 @@ const TAB_DATA = [
           />
           <p className="text-second text-center md:text-left">
             Cloud Computing Student - Study Independent Kampus Merdeka at Bangkit Academy (Sep - Des
-            2024)
+            2023)
           </p>
         </li>
         <li className="flex flex-col md:flex-row gap-3 items-center">
@@ -158,7 +158,7 @@ const TAB_DATA = [
           />
           <div className="flex flex-col justify-start gap-2">
             <p className="text-second text-center md:text-left">
-              Expert Staff Community Social Division - Hima Ilmu Komputer FMIPA UNNES (Jan -
+              Secretary of Community Social Division - Hima Ilmu Komputer FMIPA UNNES (Jan -
               Des 2022)
             </p>
           </div>

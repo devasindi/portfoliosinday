@@ -133,7 +133,7 @@ const TAB_DATA = [
             width={50} 
             height={50} />
           <p className="text-second text-center md:text-left">
-            Laboratorium Assistant - Department Computer Science FMIPA UNNES (2024)
+            Laboratory and Teaching Assistant - Department Computer Science FMIPA UNNES (2024)
           </p>
         </li>
         <li className="flex flex-col md:flex-row gap-3 items-center">
@@ -187,7 +187,7 @@ const AboutSection = () => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center lg:items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           alt={"img"}
           id="about-me"
